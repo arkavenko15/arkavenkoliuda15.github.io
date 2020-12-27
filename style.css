@@ -81,3 +81,19 @@ body
 {
     margin-top:7px;
 }
+.button-search 
+{
+    background-color: #2c71b8;
+}
+.search
+{
+    color: #2c71b8;
+    border: #2c71b8 2px solid;
+    display: block;
+
+}
+.search-place
+{
+    display: block;
+    padding: 3px;
+}
