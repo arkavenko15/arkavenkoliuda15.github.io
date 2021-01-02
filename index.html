@@ -22,18 +22,39 @@
                     <nav>
                         <ul class="menu">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Products</a></li>
+                            <li class="products"><a href="#">Products <i class="down"></i></a>
+                            <ul class="drop-down-menu">
+                                <li><a href="#">Lorem ipsum dolor</a></li>
+                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Consectetur adipisicing</a></li>
+                                <li><a href="#">Tempor incididunt</a></li>
+                                <li><a href="#">Dolore magna aliqua</a></li>
+                                <li><a href="#">Ut enim ad minim veniam</a></li>
+                                <li><a href="#">Quis nostrud</a></li>
+                            </ul>
+                            </li>
                             <li><a href="#">Payment</a></li>
                             <li><a href="#">Shipping</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-3">
-                    <div class="search">
-                    <form class="search-place">
-                        <input  type="text" placeholder="search">
-                        <button class="button-search" type="submit"><img  src="images/search.png" alt=""></button>
-                      </form>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="search">
+                            <form  class="form-search">
+                                <input placeholder="search" type="text" class="input-search">
+                                <button class="input-search-button"><img src="images/search.png" alt=""></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="cart">
+                            <a href="">
+                                <img class="blue-cart" src="images/blue-cart.png" alt="">
+                            </a>
+                            <div class="products-count">4</div>
+                        </div>
                     </div>
                 </div>
             </div>
