@@ -126,6 +126,13 @@ input::-webkit-input-placeholder
       font-weight: 300;
       font-family: 'Roboto',sans-serif;
 }
+input::-moz-placeholder
+{
+      color:#2c71b8;
+      font-size: 18px;
+      font-weight: 300;
+      font-family: 'Roboto',sans-serif;
+}
 .input-search:focus
 {
     outline: none;
