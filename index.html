@@ -22,15 +22,15 @@
                     <nav>
                         <ul class="menu">
                             <li><a href="#">Home</a></li>
-                            <li class="products"><a href="#">Products <i class="down"></i></a>
+                            <li class="products fordown" ><a href="#">Products <i class="down"></i></a>
                             <ul class="drop-down-menu">
-                                <li><a href="#">Lorem ipsum dolor</a></li>
-                                <li><a href="#">Sit amet</a></li>
-                                <li><a href="#">Consectetur adipisicing</a></li>
-                                <li><a href="#">Tempor incididunt</a></li>
-                                <li><a href="#">Dolore magna aliqua</a></li>
-                                <li><a href="#">Ut enim ad minim veniam</a></li>
-                                <li><a href="#">Quis nostrud</a></li>
+                                <li ><a href="#">Lorem ipsum dolor</a></li>
+                                <li ><a href="#">Sit amet</a></li>
+                                <li ><a href="#">Consectetur adipisicing</a></li>
+                                <li ><a href="#">Tempor incididunt</a></li>
+                                <li ><a href="#">Dolore magna aliqua</a></li>
+                                <li ><a href="#">Ut enim ad minim veniam</a></li>
+                                <li ><a href="#">Quis nostrud</a></li>
                             </ul>
                             </li>
                             <li><a href="#">Payment</a></li>
@@ -44,13 +44,13 @@
                         <div class="search">
                             <form  class="form-search">
                                 <input placeholder="search" type="text" class="input-search">
-                                <button class="input-search-button"><img src="images/search.png" alt=""></button>
+                                <div class="input-search-button"><img class="input-search-button-img" src="images/search.png" alt=""></div>
                             </form>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="cart">
-                            <a href="">
+                            <a href="#">
                                 <img class="blue-cart" src="images/blue-cart.png" alt="">
                             </a>
                             <div class="products-count">4</div>
@@ -60,9 +60,572 @@
             </div>
         </div>
    </header>
-   <main class="main"></main>
-   <footer class="footer"></footer>
-</body>
+   <main class="main">
 
+    <div class="slider">
+                    
+    </div>
+          
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="filter">
+                    <div class="type">
+                    <div class="filter-title">Device type</div>
+                    <input type="checkbox"  id="laptop">
+                    <label for="laptop">
+                        <span class="filter-properties">Laptop</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="tablet">
+                    <label for="tablet">
+                        <span class="filter-properties">Tablet</span>
+                    </label>
+                    </div>
+                    <div class="color">
+                    <div class="filter-title">color</div>
+                    <input type="checkbox"  id="black">
+                    <label for="black">
+                        <span class="filter-properties">Black</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="red">
+                    <label for="red">
+                        <span class="filter-properties">Red</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="green">
+                    <label for="green">
+                        <span class="filter-properties">Green</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="blue">
+                    <label for="blue">
+                        <span class="filter-properties">Blue</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="orange">
+                    <label for="orange">
+                        <span class="filter-properties">Orange</span>
+                    </label>
+                    <br>
+                    </div>
+                    <div class="ram">
+                    <div class="filter-title">ram</div>
+                    <input type="checkbox"  id="1gb">
+                    <label for="1gb">
+                        <span class="filter-properties">1GB</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="2gb">
+                    <label for="2gb">
+                        <span class="filter-properties">2GB</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="4gb">
+                    <label for="4gb">
+                        <span class="filter-properties">4GB</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="6gb">
+                    <label for="6gb">
+                        <span class="filter-properties">6GB</span>
+                    </label>
+                    <br>
+                    <input type="checkbox"  id="8gb">
+                    <label for="8gb">
+                        <span class="filter-properties">8GB</span>
+                    </label>
+                    <br>
+                    </div>
+                    <div class="submit">
+                    <div class="filter-button">submit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                <div class="col-md-8">
+                    <div class="title-part">
+                        <div class="bread-crumbs">
+                            
+                            <a class="crumb" href="#">Home page <span>></span> </a>
+                            <a class="crumb" href="#">Products <span>></span></a>
+                            <a class="crumb" href="#">Laptops and Tablets</a>
+                        </div>
+                        <span class="title">Laptops and Tablets</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sort"></div>
+                </div>
+            </div>
+
+
+                <div class="row">
+                <div class="content-part">
+                    <!-- 1  desktop-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/desktop.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="content-common-info">
+                            <div class="device-name">
+                                <p>#1 Device Name</p>
+                            </div>
+                            <div class="device-description">
+                                <p>Lorem ipsum dolor sit</p>
+                                <p>amet, consectetur</p>
+                                <p>adipisicing elit.</p>
+                            </div>
+                            <div class="device-type">
+                                <span>type:</span>
+                                <span>Laptop</span>                                
+                            </div>
+                            <div class="device-screen-size">
+                                <span>screen size:</span>
+                                <span>7 inches</span> 
+                            </div>
+                            <div class="device-ram">
+                                <span>ram:</span>
+                                <span>1GB</span> 
+                            </div>
+                            <div class="device-price">
+                                <p class="dollars">$599</p>
+                                <p class="cents">25</p> 
+                            </div>
+                        </div>
+                            <div class="two-items-button">
+                            <div class="button-more-details">
+                                <button > <p class="more-details">MORE DETAILS</p> </button>
+                            </div>
+                            <div class="button-add-to-cart">
+                                <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 system unit-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/system-unit.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#2 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$1250</p>
+                                    <p class="cents">99</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 3 smart-watch-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/smart-watch.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#3 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$399</p>
+                                    <p class="cents">50</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 4 laptop-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/laptop.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#4 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$599</p>
+                                    <p class="cents">25</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 5 mp3-player-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/mp3-player.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#5 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$1250</p>
+                                    <p class="cents">99</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 6 smartphone-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/smartphone.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#6 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$399</p>
+                                    <p class="cents">50</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 7 tablet-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/tablet.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#7 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$599</p>
+                                    <p class="cents">25</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 8 system unit(2)-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/system-unit.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#8 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$1250</p>
+                                    <p class="cents">99</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 9 smart-watch(2)-->
+                    <div class="col-md-4">
+                        <div class="content-item">
+                            <div class="img-">
+                                <img class="main-img"src="images/smart-watch.png" >
+                                <div class="item-container">
+                                    <div class="zoom">                                      
+                                    </div>
+                                    <div class="like">                                       
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="content-common-info">
+                                <div class="device-name">
+                                    <p>#9 Device Name</p>
+                                </div>
+                                <div class="device-description">
+                                    <p>Lorem ipsum dolor sit</p>
+                                    <p>amet, consectetur</p>
+                                    <p>adipisicing elit.</p>
+                                </div>
+                                <div class="device-type">
+                                    <span>type:</span>
+                                    <span>Laptop</span>                                
+                                </div>
+                                <div class="device-screen-size">
+                                    <span>screen size:</span>
+                                    <span>7 inches</span> 
+                                </div>
+                                <div class="device-ram">
+                                    <span>ram:</span>
+                                    <span>1GB</span> 
+                                </div>
+                                <div class="device-price">
+                                    <p class="dollars">$399</p>
+                                    <p class="cents">50</p> 
+                                </div>
+                            </div>
+                                <div class="two-items-button">
+                                <div class="button-more-details">
+                                    <button > <p class="more-details">MORE DETAILS</p> </button>
+                                </div>
+                                <div class="button-add-to-cart">
+                                    <button> <p class="add-to-cart">ADD TO CART</p> <img src="images/white-cart.png" alt=""> </button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                
+            </div>
+            </div>
+            </div>
+ 
+        </div>
+    </div>
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="load-more">
+                <p>Load more ...</p>
+             </div>
+        </div>
+    </div>        
+    </div>
+   </main>
+ 
+   <footer class="footer">
+       <p>© Copyright 2017</p>
+   </footer>
+</body>
 
 </html>
