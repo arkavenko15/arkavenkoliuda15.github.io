@@ -174,7 +174,7 @@
                                 <div class="item-container">
                                     <div class="zoom">                                      
                                     </div>
-                                    <div class="like" id="like">                                       
+                                    <div class="like"  id="like">                                       
                                     </div>
                                 </div>
                             </div>
@@ -198,6 +198,11 @@
                             <div class="device-ram">
                                 <span>ram:</span>
                                 <span>1GB</span> 
+                            </div>
+                            <div class="product-quantity">
+                                <button class="decrement-button">-</button>
+                                <input type="text" value="1">
+                                <button class="increment-button">+</button>
                             </div>
                             <div class="device-price">
                                 <p class="dollars">$599</p>
@@ -248,6 +253,11 @@
                                     <span>ram:</span>
                                     <span>1GB</span> 
                                 </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
+                                </div>
                                 <div class="device-price">
                                     <p class="dollars">$1250</p>
                                     <p class="cents">99</p> 
@@ -296,6 +306,11 @@
                                 <div class="device-ram">
                                     <span>ram:</span>
                                     <span>1GB</span> 
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="device-price">
                                     <p class="dollars">$399</p>
@@ -346,6 +361,11 @@
                                     <span>ram:</span>
                                     <span>1GB</span> 
                                 </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
+                                </div>
                                 <div class="device-price">
                                     <p class="dollars">$599</p>
                                     <p class="cents">25</p> 
@@ -394,6 +414,11 @@
                                 <div class="device-ram">
                                     <span>ram:</span>
                                     <span>1GB</span> 
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="device-price">
                                     <p class="dollars">$1250</p>
@@ -444,6 +469,11 @@
                                     <span>ram:</span>
                                     <span>1GB</span> 
                                 </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
+                                </div>
                                 <div class="device-price">
                                     <p class="dollars">$399</p>
                                     <p class="cents">50</p> 
@@ -492,6 +522,11 @@
                                 <div class="device-ram">
                                     <span>ram:</span>
                                     <span>1GB</span> 
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="device-price">
                                     <p class="dollars">$599</p>
@@ -542,6 +577,11 @@
                                     <span>ram:</span>
                                     <span>1GB</span> 
                                 </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
+                                </div>
                                 <div class="device-price">
                                     <p class="dollars">$1250</p>
                                     <p class="cents">99</p> 
@@ -591,6 +631,11 @@
                                     <span>ram:</span>
                                     <span>1GB</span> 
                                 </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1">
+                                    <button class="increment-button">+</button>
+                                </div>
                                 <div class="device-price">
                                     <p class="dollars">$399</p>
                                     <p class="cents">50</p> 
@@ -628,6 +673,26 @@
    <footer class="footer">
        <p>© Copyright 2017</p>
    </footer>
+   <!-- modal -->
+   <div class="modal hide">
+        <div class="modal-block">
+            <form >
+                <div class="modal-close-btn">
+                    <div class="close-btn">X</div>
+                </div>
+                <h3>Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button class="modal-button">Please Call</button>
+
+            </form>
+        </div> 
+   </div>
+
 </body>
 <script src="app.js"></script>
 </html>
