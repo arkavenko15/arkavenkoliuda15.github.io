@@ -226,7 +226,7 @@ input::placeholder
 .products:hover .drop-down-menu
 {
   display: block;
-
+  z-index: 1000;
 }
 
 .products:hover>a
@@ -254,13 +254,20 @@ input::placeholder
 
 
 
-.slider
+.slider-block
 {
     background-color: rgba(35, 90, 136, 0.57);
     height: 400px;
     border-bottom: rgba(255,255,255) solid 1px;
 }
-
+.slider-block div
+{
+    text-align: center;
+    line-height: 400px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+}
 .filter
 {
  background-color: rgba(86,141,198,0.57);

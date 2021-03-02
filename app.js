@@ -1,16 +1,4 @@
-//ADD TO CART
-let productsCounter = document.getElementById("products-count");
-console.log(productsCounter);
-let addToCartButtons = document.querySelectorAll(".button-add-to-cart");
-console.log(addToCartButtons);
-for(i=0;i<addToCartButtons.length;i++)
-{
-    addToCartButtons[i].addEventListener("click", function()
-    {
-        let prevProductsCount = +productsCounter.textContent;
-        productsCounter.textContent = prevProductsCount + 1;
-    })
-}
+
 //LIKE
 // let like = document.querySelectorAll(".like");
 // for(i=0;i<like.length;i++)
@@ -136,34 +124,100 @@ window.addEventListener("scroll",showModalByScroll)
 
 
 // TRY
+// let decrementBtns = document.querySelectorAll(".decrement-button");
+// let incrementBtns = document.querySelectorAll(".increment-button");
+// let productsQuantity = document.querySelectorAll(".product-quantity input");
+// for(let i = 0;i<productsQuantity.length;i++)
+// {
+//     let currentCount = productsQuantity[i].value;
+//     toggleButtonState(currentCount,i);
+// }
+
+// for(let i = 0;i<incrementBtns.length;i++)
+// {
+// incrementBtns[i].addEventListener("click",function() 
+// {
+//     productsQuantity[i].value++;
+//     toggleButtonState(productsQuantity[i].value,i);   
+// })
+// }
+// for(let i = 0;i<decrementBtns.length;i++)
+// {
+// decrementBtns[i].addEventListener("click",function() 
+// {
+    
+//     productsQuantity[i].value--;
+//     toggleButtonState(productsQuantity[i].value,i);  
+// })
+// }
+// function toggleButtonState(count,i) 
+// {
+//     decrementBtns[i].disabled = count <= 1;
+//     incrementBtns[i].disabled = count >= 10;
+// }
+
+
+
+//ADD TO CART
+let productsCounter = document.getElementById("products-count");
+let addToCartButtons = document.querySelectorAll(".button-add-to-cart");
+
+for(let i=0;i<addToCartButtons.length;i++)
+{
+    addToCartButtons[i].addEventListener("click", function()
+    {
+        productsCounter.textContent = +productsCounter.textContent +  +productsQuantity[i].value;
+    })
+}
+//ADD SLIDER
+
+    $('.slider-block').slick();
+ 
+
+
+
+// QUANTITY
 let decrementBtns = document.querySelectorAll(".decrement-button");
 let incrementBtns = document.querySelectorAll(".increment-button");
 let productsQuantity = document.querySelectorAll(".product-quantity input");
-for(let i = 0;i<productsQuantity.length;i++)
-{
-    let currentCount = productsQuantity[i].value;
-    toggleButtonState(currentCount,i);
-}
 
-for(let i = 0;i<incrementBtns.length;i++)
+function Counter(incrementBtn,decrementBtn,inputField)
 {
-incrementBtns[i].addEventListener("click",function() 
-{
-    productsQuantity[i].value++;
-    toggleButtonState(productsQuantity[i].value,i);   
-})
+    this.domRefs =
+    {
+        incrementBtn,
+        decrementBtn,
+        inputField,
+    }
+    this.toggleButtonState = function()
+    {
+        const count = this.domRefs.inputField.value;
+        this.domRefs.decrementBtn.disabled = count <=1;
+        this.domRefs.incrementBtn.disabled = count >=10;
+    }
+    this.toggleButtonState();
+
+    this.increment = function()
+    {
+        let currentCount = +this.domRefs.inputField.value;
+        let nextCount = currentCount+1;
+        this.domRefs.inputField.value = nextCount;
+        this.toggleButtonState();
+    }
+    this.decrement = function()
+    {
+        let currentCount = +this.domRefs.inputField.value;
+        let nextCount = currentCount-1;
+        this.domRefs.inputField.value = nextCount;
+        this.toggleButtonState();
+    }
+
+    this.domRefs.incrementBtn.addEventListener("click",this.increment.bind(this));
+    this.domRefs.decrementBtn.addEventListener("click",this.decrement.bind(this));
+
 }
-for(let i = 0;i<decrementBtns.length;i++)
-{
-decrementBtns[i].addEventListener("click",function() 
-{
-    
-    productsQuantity[i].value--;
-    toggleButtonState(productsQuantity[i].value,i);  
-})
-}
-function toggleButtonState(count,i) 
-{
-    decrementBtns[i].disabled = count <= 1;
-    incrementBtns[i].disabled = count >= 10;
-}
+const counters = [];
+productsQuantity.forEach((item,i) => (
+    counters[i] = new Counter(incrementBtns[i],decrementBtns[i],productsQuantity[i])
+))
+
